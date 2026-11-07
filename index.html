@@ -849,6 +849,15 @@
   .stat-num { font-family: 'Fira Mono', monospace; font-size: clamp(22px, 2.2vw, 32px); font-weight: 700; color: #162f42; }
   .stat-label { font-size: 15px; color: #3d5668; margin-top: 4px; }
   @media (max-width: 900px) { .stats-grid { grid-template-columns: 1fr 1fr; } .stats-strip { padding: 36px 24px 4px; } }
+
+  .pain-title { font-size: clamp(22px, 2vw, 30px); font-weight: 700; color: #162f42; margin-bottom: 6px; }
+  .pain-sub { font-size: 16px; color: #3d5668; margin-bottom: 24px; }
+  .pain-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .pain-card { background: rgba(255,255,255,0.7); border: 1px solid rgba(22,47,66,0.12); border-radius: 10px; padding: 20px 22px; }
+  .pain-card h3 { font-size: 18px; color: #162f42; margin-bottom: 8px; }
+  .pain-card p { font-size: 15px; color: #3d5668; }
+  .pain-proof { font-family: 'Fira Mono', monospace; font-size: 14px; font-weight: 700; color: #162f42; margin-top: 10px; }
+  @media (max-width: 900px) { .pain-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -859,7 +868,7 @@
     <div class="left">
       <p class="hero-name">Aisulu Tustykbayeva <span>| Senior TPM, Cloud & AI Programs</span></p>
       <h1 class="hero-headline">I build the systems cloud and AI teams run on.</h1>
-      <p class="hero-tagline">My job is done when the system runs without me. I design to that standard from day one.</p>
+      <p class="hero-tagline">Programs fail in the gaps between teams. I work in those gaps.</p>
       <p class="hero-proof">On-time delivery 40% &rarr; 85% &nbsp;&middot;&nbsp; $20M billing ARR protected &nbsp;&middot;&nbsp; PCI DSS 4.0 across 7 data centers</p>
       <p class="hero-proof" style="margin-top: 12px;">Open to platform, infrastructure, and AI evals TPM roles in the Bay Area. <a href="mailto:aisulu.tustykbayeva@gmail.com" style="color: #ffffff; text-decoration: underline;">Email me</a></p>
     </div>
@@ -885,13 +894,15 @@
 
 <!-- RESULTS -->
 <div class="stats-strip">
-  <div class="stats-grid">
-    <div class="stat"><div class="stat-num">40% &rarr; 85%</div><div class="stat-label">On-time delivery, company-wide</div></div>
-    <div class="stat"><div class="stat-num">4-6 hrs &rarr; 10-15 min</div><div class="stat-label">Cluster provisioning time, error rate down 10x</div></div>
-    <div class="stat"><div class="stat-num">$20M</div><div class="stat-label">Billing ARR protected in a zero-downtime migration</div></div>
-    <div class="stat"><div class="stat-num">3 weeks early</div><div class="stat-label">PCI DSS 4.0 certification across 7 data centers</div></div>
-    <div class="stat"><div class="stat-num">4 &rarr; 7 sites</div><div class="stat-label">Data center expansion, $8M in deals unblocked</div></div>
-    <div class="stat"><div class="stat-num">15% &rarr; 9%</div><div class="stat-label">Customer churn, $1.8M in revenue leakage cut</div></div>
+  <div class="pain-title">Problems I solve for leadership</div>
+  <p class="pain-sub">You hire a TPM when a program has no owner, no trusted numbers, and a date that cannot move. That is the work I do.</p>
+  <div class="pain-grid">
+    <div class="pain-card"><h3>You learn about a slip when it is too late</h3><p>No cadence. No metrics you trust. I build both from zero, so risk shows up early, in a form you can act on.</p><div class="pain-proof">On-time delivery: 40% &rarr; 85%, company-wide</div></div>
+    <div class="pain-card"><h3>Teams block each other. No one owns the gap</h3><p>I map the block, name the owner, and close it. No direct reports. No mandate. The system has to work anyway.</p><div class="pain-proof">A 6-month deadlock closed in 8 weeks</div></div>
+    <div class="pain-card"><h3>An audit can stop your revenue</h3><p>Compliance run as a program, not a scramble: scope, evidence, and gates across every team.</p><div class="pain-proof">PCI DSS 4.0 certified 3 weeks early &middot; $3.2M in contracts signed</div></div>
+    <div class="pain-card"><h3>A migration can break the money system</h3><p>Zero-downtime design, with checks at each step and no margin for data loss.</p><div class="pain-proof">$20M billing ARR protected &middot; Query time 3-5s &rarr; under 500 ms</div></div>
+    <div class="pain-card"><h3>Engineers wait hours for infrastructure</h3><p>Provisioning built as a product: automation, gates, and a rollout teams adopt without a mandate.</p><div class="pain-proof">Cluster time: 4-6 hours &rarr; 10-15 minutes</div></div>
+    <div class="pain-card"><h3>Deals wait for capacity that is not there</h3><p>Expansion run across vendors, sites, and countries, tied to the sales pipeline it unblocks.</p><div class="pain-proof">4 &rarr; 7 data centers &middot; $8M in deals unblocked</div></div>
   </div>
 </div>
 
@@ -912,19 +923,19 @@
   <div class="grid-2">
     <div class="card">
       <h3>Cloud platform programs</h3>
-      <p>Migrations, provisioning automation, multi-site networks. Kubernetes, Terraform, GitOps, OpenStack, GraphQL, Kafka.</p>
+      <p>Migrations and expansion that cannot stop the business. Kubernetes, Terraform, GitOps, OpenStack, GraphQL, Kafka.</p>
     </div>
     <div class="card">
       <h3>Security and compliance</h3>
-      <p>PCI DSS 4.0 across 7 data centers. Scope control, evidence, audit gates.</p>
+      <p>Audits that gate revenue, run as programs, not scrambles. PCI DSS 4.0 across 7 data centers.</p>
     </div>
     <div class="card">
       <h3>Measurement systems</h3>
-      <p>Metrics from zero: SQL, dashboards, forecasts. Teams decide with data, not opinion.</p>
+      <p>For leaders with no numbers they trust. Metrics from zero: SQL, dashboards, forecasts.</p>
     </div>
     <div class="card">
       <h3>AI quality</h3>
-      <p>Evals, release gates, model routing. Kai: a LoRA fine-tune plus a safety harness, live in public.</p>
+      <p>For AI features that must be safe to ship. Evals, release gates, model routing. Kai: a LoRA fine-tune plus a safety harness, live in public.</p>
     </div>
   </div>
 </div>
