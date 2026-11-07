@@ -1116,6 +1116,9 @@
         <span class="skill-chip">Slurm / job scheduling</span>
         <span class="skill-chip">GPU cost attribution</span>
         <span class="skill-chip">ML observability</span>
+        <span class="skill-chip">LoRA / QLoRA fine-tuning</span>
+        <span class="skill-chip">LLM evals &amp; guardrails</span>
+        <span class="skill-chip">RAG systems</span>
       </div>
     </div>
 
@@ -1170,13 +1173,24 @@
 
   <div class="grid-2" style="margin-bottom: 40px;">
     <div class="card">
+      <h3 class="mono" style="font-size: 20px; color: var(--accent); margin-bottom: 8px;">Kai — Safe AI Tutor for Kids 3–8</h3>
+      <div style="margin-bottom: 16px;">
+        <span class="tag">Gemma 4 E2B</span><span class="tag">QLoRA Fine-Tune</span><span class="tag">FastAPI</span><span class="tag">Child Safety</span>
+      </div>
+      <p style="margin-bottom: 16px;">A safe AI tutor for children 3–8, co-built with my wife. Two layers. Layer 1: a Gemma 4 E2B model fine-tuned with QLoRA on a purpose-built 564-example dataset — age cohorts 3–4 / 5–6 / 7–8 with sentence-length caps, literal-mode and Spanish/Kazakh code-switching variants, 96 safety-refusal examples — exported as a 4-bit GGUF for low-cost tablets. Layer 2: a deployed FastAPI harness — Presidio PII scrubbing before inference, retrieval over a pre-vetted knowledge base, a pre-flight safety judge that checks every response before it streams, and Prometheus metrics for safety blocks and reading level.</p>
+      <p style="margin-bottom: 16px;"><strong>Why it matters:</strong> In regulated AI, the harness and the evals are the product; the model is a component. Kai's safety rules live in a written constitution, enforced as deterministic acceptance criteria — the same pattern as review gates and confidentiality boundaries in legal AI.</p>
+      <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong style="color:var(--text-main)">Stack:</strong> Python, Unsloth / TRL, FastAPI, ChromaDB, Presidio, Prometheus · COPPA / EU AI Act research · Submitted to the Stanford Accelerator for Learning</p>
+      <a href="https://huggingface.co/alzion1/kai" target="_blank" class="impact-link" style="font-size: 14px;">Model card →</a>
+    </div>
+
+    <div class="card">
       <h3 class="mono" style="font-size: 20px; color: var(--accent); margin-bottom: 8px;">GPU fleet reliability classifier</h3>
       <div style="margin-bottom: 16px;">
         <span class="tag">Python</span><span class="tag">Slurm</span><span class="tag">Prometheus</span><span class="tag">Grafana</span>
       </div>
       <p style="margin-bottom: 16px;">Slurm job failure classifier for a GPU cluster. Catches node-level faults (dead GPUs, driver failures, thermal throttling) before they cascade into downstream job failures. Stops scheduling to affected nodes. Outputs P1-to-P4 SLA-tiered alerts, runbooks per failure class, and cost-attributed reports per node.</p>
       <p style="margin-bottom: 16px;"><strong>Why it matters:</strong> A dead node that keeps accepting jobs burns cluster hours and delays training runs. The right intervention is at the scheduler, not the postmortem. Same framing a fleet ops team uses to make decommission decisions.</p>
-      <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong style="color:var(--text-main)">Stack:</strong> Python, Slurm, Prometheus, Grafana · NVIDIA NCA-AIIO certification in progress</p>
+      <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong style="color:var(--text-main)">Stack:</strong> Python, Slurm, Prometheus, Grafana · NVIDIA NCA-AIIO (earned Sep 2026)</p>
       <a href="https://github.com/alzion/Slurm_job_failure_classifier" target="_blank" class="impact-link" style="font-size: 14px;">Code →</a>
     </div>
 
@@ -1188,35 +1202,9 @@
       <p style="margin-bottom: 16px;">Interactive tool for structured LLM prompt optimization. Engineers routinely cargo-cult DSPy settings without understanding what GEPA/BayesOpt is actually optimizing or why the labeled dataset size matters. Built a 5-step walkthrough that enforces data minimums, parses plain English into typed Signatures, runs optimization with live progress, and shows before/after metric comparison.</p>
       <p style="margin-bottom: 16px;"><strong>Design constraint:</strong> GEPA requires a minimum labeled dataset before optimization produces meaningful results. Running without that gate produces confidently wrong output, the same failure class as building migration resolvers before completing the identity map. The gate is not optional; it's surfaced at step 2, not buried in docs.</p>
       <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong style="color:var(--text-main)">TPM framing:</strong> Mirrors wave-based migration planning. Each phase has a defined entry condition, a transformation, and an exit criterion. Same gate-and-validate structure, different domain.</p>
-      <a href="https://huggingface.co/spaces/alzion1/dspy-prompt-optimizer" target="_blank" class="impact-link" style="font-size: 14px;">Demo →</a>
+      <a href="https://github.com/alzion/dspy-prompt-optimizer" target="_blank" class="impact-link" style="font-size: 14px;">Code →</a>
     </div>
   </div>
-
-  <div class="section-divider">
-    <span class="mono section-divider-label">Also built</span>
-  </div>
-
-  <div class="grid-2" style="margin-bottom: 48px;">
-    <div class="card">
-      <h3 class="mono" style="font-size: 17px; color: var(--accent); margin-bottom: 8px;">Safe AI Tutor for Kids 3–8</h3>
-      <div style="margin-bottom: 14px;">
-        <span class="tag">Agentic AI</span><span class="tag">2B-Param On-Device</span><span class="tag">Vector DB</span><span class="tag">Content Governance</span>
-      </div>
-      <p style="font-size: 14px; margin-bottom: 12px;">General-purpose LLMs lack developmental scaffolding and safe routing for sensitive disclosures. Built a 2B-parameter on-device model with three hard constraints: a safety constitution (100% harmful-content interception in evaluation), a developmental scaffolding matrix limiting vocabulary by age, and a pre-vetted knowledge base that eliminates hallucination at the cost of topical flexibility.</p>
-      <p style="font-size: 14px; margin-bottom: 12px; color: var(--text-muted);"><strong style="color:var(--text-main)">Tradeoffs:</strong> Hard-coded safety constitution sacrifices adaptability for predictability. No persistent cross-session memory prioritizes privacy over personalization.</p>
-      <p style="font-size: 14px; color: var(--text-muted);"><strong style="color:var(--text-main)">TPM artifact:</strong> Safety constitution used as deterministic QA acceptance criteria. Curriculum matrix drafted as the functional spec.</p>
-    </div>
-
-    <div class="card">
-      <h3 class="mono" style="font-size: 17px; color: var(--accent); margin-bottom: 8px;">Dependency Risk Classifier</h3>
-      <div style="margin-bottom: 14px;">
-        <span class="tag">Claude API</span><span class="tag">Web App</span><span class="tag">Netlify</span>
-      </div>
-      <p style="font-size: 14px; margin-bottom: 12px;">Tracking dependencies across complex program graphs is manual and error-prone. A tool that ingests freeform dependency descriptions and automatically classifies them as CONFIRMED, ASSUMED, or AT-RISK, then exports directly into RAID-log format.</p>
-      <p style="font-size: 14px; color: var(--text-muted);"><strong style="color:var(--text-main)">TPM framing:</strong> Encodes a senior infra TPM's three-tier dependency mental model directly into automated software. Removes the gap between how TPMs think about risk and how it gets tracked.</p>
-    </div>
-  </div>
-
 
 </div>
 
@@ -1259,7 +1247,7 @@
         <div class="credential-list">
           <div class="credential-item"><span class="mono">M.Sc. Computer Science</span></div>
           <div class="credential-item"><span class="mono">PMP Certified</span></div>
-          <div class="credential-item"><span class="mono">NVIDIA NCA-AIIO (in progress)</span></div>
+          <div class="credential-item"><span class="mono">NVIDIA NCA-AIIO · Sep 2026</span></div>
           <div class="credential-item">
             <span class="mono">8+ years of experience</span>
             <p style="margin-top: 6px; color: var(--text-muted); font-size: 14px;">San Francisco, CA · Green Card holder</p>
@@ -1308,7 +1296,7 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-bottom" style="border-top: none; padding-top: 0;">
-      <p>M.Sc. Computer Science &middot; PMP &middot; NVIDIA NCA-AIIO (in progress)</p>
+      <p>M.Sc. Computer Science &middot; PMP &middot; NVIDIA NCA-AIIO</p>
       <p>San Francisco, CA &middot; Green Card holder</p>
       <p style="margin-top: 20px;">
         <a href="mailto:aisulu.tustykbayeva@gmail.com" class="footer-link">Email</a> &middot;
