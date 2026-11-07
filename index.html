@@ -868,6 +868,13 @@
   #problems { background: rgba(255,255,255,0.97); border-radius: 12px; }
   #problems .pain-sub { color: #2c4252; font-size: 17px; }
   #problems .pain-card p { color: #2c4252; }
+
+  .hero-stats { display: flex; gap: 20px; margin-top: 26px; flex-wrap: wrap; }
+  .hstat { border-top: 3px solid #aad0d4; padding-top: 8px; min-width: 110px; }
+  .hstat-num { font-family: 'Fira Mono', monospace; font-size: clamp(17px, 1.6vw, 21px); font-weight: 700; color: #ffffff; }
+  .hstat-label { font-size: 12.5px; color: rgba(255,255,255,0.78); margin-top: 2px; }
+  .hero-open { font-size: 15px; color: rgba(255,255,255,0.92); margin-top: 16px; }
+  .hero-open a { color: #ffffff; text-decoration: underline; }
 </style>
 </head>
 <body>
@@ -879,10 +886,12 @@
       <p class="hero-name">Aisulu Tustykbayeva <span>| Senior TPM, Cloud & AI Programs</span></p>
       <h1 class="hero-headline">Programs fail in the gaps between teams. I close those gaps.</h1>
       <p class="hero-tagline">I build the systems cloud and AI teams run on.</p>
-      <p class="hero-proof">On-time delivery 40% &rarr; 85%</p>
-      <p class="hero-proof" style="margin-top: 10px;">$20M billing ARR protected</p>
-      <p class="hero-proof" style="margin-top: 10px;">PCI DSS 4.0 across 7 data centers</p>
-      <p class="hero-proof" style="margin-top: 12px;">Open to platform, infrastructure, and AI TPM roles in the Bay Area. <a href="mailto:aisulu.tustykbayeva@gmail.com" style="color: #0a2e3d; text-decoration: underline;">Email me</a></p>
+      <div class="hero-stats">
+        <div class="hstat"><div class="hstat-num">40% &rarr; 85%</div><div class="hstat-label">On-time delivery</div></div>
+        <div class="hstat"><div class="hstat-num">$20M</div><div class="hstat-label">Billing ARR protected</div></div>
+        <div class="hstat"><div class="hstat-num">7 DCs</div><div class="hstat-label">PCI DSS 4.0 certified</div></div>
+      </div>
+      <p class="hero-open">Open to platform, infrastructure, and AI TPM roles in the Bay Area. <a href="mailto:aisulu.tustykbayeva@gmail.com">Email me</a></p>
     </div>
     <div class="right">
       <div class="avatar">
