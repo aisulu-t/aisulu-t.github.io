@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aisulu Tustykbayeva | Senior TPM, Infrastructure</title>
+<title>Aisulu Tustykbayeva — Senior TPM, Cloud & AI Programs</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -850,10 +850,10 @@
 <section class="hero">
   <div class="hero-inner">
     <div class="left">
-      <p class="hero-name">Aisulu Tustykbayeva <span>| Sr Technical Program Manager, Cloud/AI Infra</span></p>
-      <h1 class="hero-headline">I run infrastructure programs that ship.</h1>
+      <p class="hero-name">Aisulu Tustykbayeva <span>| Senior TPM, Cloud & AI Programs</span></p>
+      <h1 class="hero-headline">I build the operating and measurement systems that cloud and AI teams run on: cadence, metrics, forecasts, and release gates.</h1>
       <p class="hero-tagline">My job is done when the system runs without me. I design to that standard from day one.</p>
-      <p class="hero-proof">$10M+ revenue enabled &nbsp;&middot;&nbsp; $4M+ largest program budget</p>
+      <p class="hero-proof">PCI DSS 4.0 across 7 data centers &nbsp;&middot;&nbsp; Metrics built from zero (SQL) &nbsp;&middot;&nbsp; AI tutor model live on Hugging Face &nbsp;&middot;&nbsp; San Francisco &nbsp;&middot;&nbsp; US work authorized</p>
     </div>
     <div class="right">
       <div class="avatar">
@@ -877,37 +877,33 @@
 <!-- TABS -->
 <div class="tab-wrapper">
   <div class="tab-container">
-    <button class="tab-btn active" onclick="openTab('value')">Value</button>
-    <button class="tab-btn" onclick="openTab('about')">About</button>
+    <button class="tab-btn active" onclick="openTab('value')">What I do</button>
     <button class="tab-btn" onclick="openTab('programs')">Programs</button>
-    <button class="tab-btn" onclick="openTab('skills')">Skills</button>
     <button class="tab-btn" onclick="openTab('projects')">Projects</button>
+    <button class="tab-btn" onclick="openTab('skills')">Skills</button>
+    <button class="tab-btn" onclick="openTab('about')">About</button>
   </div>
 </div>
 
-<!-- TAB 1: VALUE -->
+<!-- TAB 1: WHAT I DO -->
 <div id="value" class="tab-content active">
-  <h2 class="section-title">The problems I'm hired to solve</h2>
-  <div class="grid-3">
+  <h2 class="section-title">What I do</h2>
+  <div class="grid-2">
     <div class="card">
-      <h3>Nobody owns delivery</h3>
-      <p>Deadlines slip. Dependencies go dark. Escalations replace planning. I map the gaps, <strong>design the operating model, and deploy it across XFN teams</strong> without formal authority. The system runs. I'm not in the critical path.</p>
+      <h3>Cloud platform programs</h3>
+      <p>Migrations, provisioning automation, multi-site networks. Kubernetes, Terraform, GitOps, OpenStack, GraphQL, Kafka.</p>
     </div>
     <div class="card">
-      <h3>Production system replacement with no downtime</h3>
-      <p>Live revenue base. No margin for data loss. Engineers who disagree on sequencing. I design the <strong>dual-write window, the validation gate, and the rollback trigger</strong> before engineering starts. Not after the first incident.</p>
+      <h3>Security and compliance</h3>
+      <p>PCI DSS 4.0 across 7 data centers. Scope control, evidence, audit gates.</p>
     </div>
     <div class="card">
-      <h3>Technical depth is required</h3>
-      <p>I earn engineers' trust by showing up technically prepared: reading the specs, surfacing the design gap before it becomes a P0, running the test that finds what the architecture missed. That's the entry condition. Everything else follows.</p>
+      <h3>Measurement systems</h3>
+      <p>Metrics from zero: SQL, dashboards, forecasts. Teams decide with data, not opinion.</p>
     </div>
     <div class="card">
-      <h3>Hard external deadline attached to a dollar amount</h3>
-      <p>Certification, contract, or competitor launch. I run the <strong>evidence framework, surface amber flags before they become findings</strong>, and close programs on schedule when missing the date has a public cost.</p>
-    </div>
-    <div class="card">
-      <h3>Technical surface, organizational root</h3>
-      <p>Two teams, no one accountable. Neither moves first. I find the root cause of the resistance, redesign the sequence so each team has a reason to go, and drive the decision to close.</p>
+      <h3>AI quality</h3>
+      <p>Evals, release gates, model routing. Kai: a LoRA fine-tune plus a safety harness, live in public.</p>
     </div>
   </div>
 </div>
@@ -940,13 +936,31 @@
       </thead>
       <tbody>
         <tr>
-          <td><strong>CRM migration via GraphQL federation</strong></td>
+          <td><strong>K8s provisioning automation (Terraform + GitOps)</strong></td>
+          <td>96% provisioning time reduction (4–6 hrs → 10–15 min). Error rate down 10×.</td>
+          <td>8 skeptics. One never converted. System works regardless.</td>
+          <td>DevOps, K8s Platform, DBaaS, Networking, Security</td>
+          <td>
+            <div class="skills-label">Hard</div>
+            <span class="prog-skill prog-skill-h">Kubernetes / Helm</span>
+            <span class="prog-skill prog-skill-h">Terraform state management</span>
+            <span class="prog-skill prog-skill-h">GitOps CI gates</span>
+            <span class="prog-skill prog-skill-h">TOCTOU risk mitigation</span>
+            <div class="skills-label" style="margin-top:8px">Soft</div>
+            <span class="prog-skill prog-skill-s">Change management</span>
+            <span class="prog-skill prog-skill-s">Adoption without mandate</span>
+            <span class="prog-skill prog-skill-s">Rollout sequencing by trust</span>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>CRM migration via GraphQL gateway</strong></td>
           <td>Zero downtime, $20M revenue base protected. 12 months to 4. Query p99: 3–5s → &lt;500ms.</td>
           <td>Live $20M revenue base. No margin for data loss. 5 platforms in disagreement on sequencing.</td>
           <td>Platform, DBaaS, K8s, LBaaS, SRE</td>
           <td>
             <div class="skills-label">Hard</div>
-            <span class="prog-skill prog-skill-h">GraphQL federation</span>
+            <span class="prog-skill prog-skill-h">GraphQL gateway</span>
+            <span class="prog-skill prog-skill-h">Kafka — change stream and cache invalidation</span>
             <span class="prog-skill prog-skill-h">Dual-write migration</span>
             <span class="prog-skill prog-skill-h">Data validation pipelines</span>
             <span class="prog-skill prog-skill-h">PostgreSQL / WHMCS</span>
@@ -958,20 +972,35 @@
         </tr>
         <tr>
           <td><strong>PCI DSS 4.0 certification, 7 DCs</strong></td>
-          <td>Certified 3 weeks early. $3.2M ARR converted. Deploy frequency 40+/week maintained.</td>
+          <td>Certified 3 weeks early. $3.2M in contracts signed by customers because we passed the audit. Deploy frequency 40+/week maintained.</td>
           <td>Competitor on the same deadline. 8 service teams, no direct authority.</td>
           <td>LBaaS, DBaaS, K8s, Object Storage, Networking, Security, SRE, DevOps</td>
           <td>
             <div class="skills-label">Hard</div>
             <span class="prog-skill prog-skill-h">PCI DSS 4.0</span>
             <span class="prog-skill prog-skill-h">RAG evidence dashboards</span>
-            <span class="prog-skill prog-skill-h">Sidecar-emitted compliance signals</span>
-            <span class="prog-skill prog-skill-h">API schema governance</span>
             <div class="skills-label" style="margin-top:8px">Soft</div>
             <span class="prog-skill prog-skill-s">QSA negotiation</span>
             <span class="prog-skill prog-skill-s">Concession strategy</span>
             <span class="prog-skill prog-skill-s">Amber rule governance</span>
             <span class="prog-skill prog-skill-s">Influence without authority</span>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Delivery operating system</strong></td>
+          <td>On-time delivery: 40% to 85%, company-wide.</td>
+          <td>No mandate. Adoption had to be earned, not assigned.</td>
+          <td>All 8 service teams + Product, Legal, Finance</td>
+          <td>
+            <div class="skills-label">Hard</div>
+            <span class="prog-skill prog-skill-h">OKR / KPI framework design</span>
+            <span class="prog-skill prog-skill-h">RAID logging</span>
+            <span class="prog-skill prog-skill-h">Dependency tracking</span>
+            <span class="prog-skill prog-skill-h">Operating model design</span>
+            <div class="skills-label" style="margin-top:8px">Soft</div>
+            <span class="prog-skill prog-skill-s">Influence without authority</span>
+            <span class="prog-skill prog-skill-s">Earned adoption</span>
+            <span class="prog-skill prog-skill-s">Company-wide change management</span>
           </td>
         </tr>
         <tr>
@@ -993,20 +1022,21 @@
           </td>
         </tr>
         <tr>
-          <td><strong>K8s provisioning automation (Terraform + GitOps)</strong></td>
-          <td>96% provisioning time reduction (4–6 hrs → 10–15 min). Error rate down 10×.</td>
-          <td>8 skeptics. One never converted. System works regardless.</td>
-          <td>DevOps, K8s Platform, DBaaS, Networking, Security</td>
+          <td><strong>Cross-team observability & deadlock resolution</strong></td>
+          <td>6-month deadlock resolved in 8 weeks. $2M+ pricing decision enabled.</td>
+          <td>No owner. Previous mandate produced silent resistance. Neither team would move first.</td>
+          <td>Product, Infrastructure (LBaaS, K8s, Compute, Object Storage), Data</td>
           <td>
             <div class="skills-label">Hard</div>
-            <span class="prog-skill prog-skill-h">Kubernetes / Helm</span>
-            <span class="prog-skill prog-skill-h">Terraform state management</span>
-            <span class="prog-skill prog-skill-h">GitOps CI gates</span>
-            <span class="prog-skill prog-skill-h">TOCTOU risk mitigation</span>
+            <span class="prog-skill prog-skill-h">Prometheus / Grafana</span>
+            <span class="prog-skill prog-skill-h">Metrics taxonomy design</span>
+            <span class="prog-skill prog-skill-h">PoC design & execution</span>
+            <span class="prog-skill prog-skill-h">Schema freeze governance</span>
             <div class="skills-label" style="margin-top:8px">Soft</div>
-            <span class="prog-skill prog-skill-s">Change management</span>
-            <span class="prog-skill prog-skill-s">Adoption without mandate</span>
+            <span class="prog-skill prog-skill-s">Resistance root-cause mapping</span>
             <span class="prog-skill prog-skill-s">Rollout sequencing by trust</span>
+            <span class="prog-skill prog-skill-s">Ambiguity ownership</span>
+            <span class="prog-skill prog-skill-s">Program durability under leadership change</span>
           </td>
         </tr>
         <tr>
@@ -1024,41 +1054,6 @@
             <span class="prog-skill prog-skill-s">Cross-functional data gathering</span>
             <span class="prog-skill prog-skill-s">Forecast credibility building</span>
             <span class="prog-skill prog-skill-s">Executive communication</span>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Cross-team observability & deadlock resolution</strong></td>
-          <td>6-month deadlock resolved in 8 weeks. $2M+ pricing decision enabled. $500K decommissioning savings.</td>
-          <td>No owner. Previous mandate produced silent resistance. Neither team would move first.</td>
-          <td>Product, Infrastructure (LBaaS, K8s, Compute, Object Storage), Data</td>
-          <td>
-            <div class="skills-label">Hard</div>
-            <span class="prog-skill prog-skill-h">Prometheus / Grafana</span>
-            <span class="prog-skill prog-skill-h">Metrics taxonomy design</span>
-            <span class="prog-skill prog-skill-h">PoC design & execution</span>
-            <span class="prog-skill prog-skill-h">Schema freeze governance</span>
-            <div class="skills-label" style="margin-top:8px">Soft</div>
-            <span class="prog-skill prog-skill-s">Resistance root-cause mapping</span>
-            <span class="prog-skill prog-skill-s">Rollout sequencing by trust</span>
-            <span class="prog-skill prog-skill-s">Ambiguity ownership</span>
-            <span class="prog-skill prog-skill-s">Program durability under leadership change</span>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Delivery operating system</strong></td>
-          <td>On-time delivery: 40% to 85%, company-wide.</td>
-          <td>No mandate. Adoption had to be earned, not assigned.</td>
-          <td>All 8 service teams + Product, Legal, Finance</td>
-          <td>
-            <div class="skills-label">Hard</div>
-            <span class="prog-skill prog-skill-h">OKR / KPI framework design</span>
-            <span class="prog-skill prog-skill-h">RAID logging</span>
-            <span class="prog-skill prog-skill-h">Dependency tracking</span>
-            <span class="prog-skill prog-skill-h">Operating model design</span>
-            <div class="skills-label" style="margin-top:8px">Soft</div>
-            <span class="prog-skill prog-skill-s">Influence without authority</span>
-            <span class="prog-skill prog-skill-s">Earned adoption</span>
-            <span class="prog-skill prog-skill-s">Company-wide change management</span>
           </td>
         </tr>
       </tbody>
@@ -1086,7 +1081,7 @@
         <div class="donut-center">75%</div>
       </div>
       <h4 class="mono" style="margin-bottom: 6px;">New-Service Integration Faster</h4>
-      <p style="color: var(--text-muted); font-size: 14px;">4–6 weeks to 1 week via GraphQL federation across 5 legacy systems.</p>
+      <p style="color: var(--text-muted); font-size: 14px;">4–6 weeks to 1 week via GraphQL gateway across 5 legacy systems.</p>
     </div>
     <div class="donut-item">
       <div class="donut-wrap">
@@ -1102,72 +1097,7 @@
   </div>
 </div>
 
-<!-- TAB 6: SKILLS -->
-<div id="skills" class="tab-content">
-  <h2 class="section-title">Skills</h2>
-
-  <div class="grid-2">
-    <div class="skill-card">
-      <h3 class="mono skill-cat">AI &amp; GPU Infrastructure</h3>
-      <div class="skill-chips">
-        <span class="skill-chip">GPU fleet lifecycle management</span>
-        <span class="skill-chip">Compute stack delivery</span>
-        <span class="skill-chip">Node-level fault detection</span>
-        <span class="skill-chip">Slurm / job scheduling</span>
-        <span class="skill-chip">GPU cost attribution</span>
-        <span class="skill-chip">ML observability</span>
-        <span class="skill-chip">LoRA / QLoRA fine-tuning</span>
-        <span class="skill-chip">LLM evals &amp; guardrails</span>
-        <span class="skill-chip">RAG systems</span>
-      </div>
-    </div>
-
-    <div class="skill-card">
-      <h3 class="mono skill-cat">Infrastructure &amp; Systems</h3>
-      <div class="skill-chips">
-        <span class="skill-chip">DC build program execution</span>
-        <span class="skill-chip">Multi-DC architecture</span>
-        <span class="skill-chip">Bare-metal &amp; on-prem infrastructure</span>
-        <span class="skill-chip">Optical networking (DWDM, G.8032)</span>
-        <span class="skill-chip">BFD + BGP / traffic engineering</span>
-        <span class="skill-chip">L4/L7 load balancing</span>
-        <span class="skill-chip">Kubernetes / Helm / Terraform / GitOps</span>
-        <span class="skill-chip">Prometheus / Grafana / Kubecost</span>
-      </div>
-    </div>
-
-    <div class="skill-card">
-      <h3 class="mono skill-cat">Program Delivery</h3>
-      <div class="skill-chips">
-        <span class="skill-chip">Portfolio management</span>
-        <span class="skill-chip">Technical Architecture Review</span>
-        <span class="skill-chip">Quarterly strategic review</span>
-        <span class="skill-chip">Cross-org dependency management</span>
-        <span class="skill-chip">Agile / hybrid delivery</span>
-        <span class="skill-chip">Wave-based migration planning</span>
-        <span class="skill-chip">RAID / risk management</span>
-        <span class="skill-chip">Operating model design</span>
-        <span class="skill-chip">Hardware procurement &amp; vendor management</span>
-        <span class="skill-chip">Facilitation</span>
-        <span class="skill-chip">Consensus building</span>
-        <span class="skill-chip">Strategic execution</span>
-      </div>
-    </div>
-
-    <div class="skill-card">
-      <h3 class="mono skill-cat">Compliance &amp; Data</h3>
-      <div class="skill-chips">
-        <span class="skill-chip">PCI DSS 4.0</span>
-        <span class="skill-chip">QSA audit management</span>
-        <span class="skill-chip">Zero-downtime migration</span>
-        <span class="skill-chip">Data integrity validation</span>
-        <span class="skill-chip">Compliance evidence governance</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- TAB 7: PROJECTS -->
+<!-- TAB 3: PROJECTS -->
 <div id="projects" class="tab-content">
   <h2 class="section-title">I build to stay close to the systems my programs run on</h2>
 
@@ -1188,7 +1118,7 @@
       <div style="margin-bottom: 16px;">
         <span class="tag">Python</span><span class="tag">Slurm</span><span class="tag">Prometheus</span><span class="tag">Grafana</span>
       </div>
-      <p style="margin-bottom: 16px;">Slurm job failure classifier for a GPU cluster. Catches node-level faults (dead GPUs, driver failures, thermal throttling) before they cascade into downstream job failures. Stops scheduling to affected nodes. Outputs P1-to-P4 SLA-tiered alerts, runbooks per failure class, and cost-attributed reports per node.</p>
+      <p style="margin-bottom: 16px;">Slurm job failure classifier for a GPU cluster (simulated cluster). Catches node-level faults (dead GPUs, driver failures, thermal throttling) before they cascade into downstream job failures. Stops scheduling to affected nodes. Outputs P1-to-P4 SLA-tiered alerts, runbooks per failure class, and cost-attributed reports per node.</p>
       <p style="margin-bottom: 16px;"><strong>Why it matters:</strong> A dead node that keeps accepting jobs burns cluster hours and delays training runs. The right intervention is at the scheduler, not the postmortem. Same framing a fleet ops team uses to make decommission decisions.</p>
       <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;"><strong style="color:var(--text-main)">Stack:</strong> Python, Slurm, Prometheus, Grafana · NVIDIA NCA-AIIO (earned Sep 2026)</p>
       <a href="https://github.com/alzion/Slurm_job_failure_classifier" target="_blank" class="impact-link" style="font-size: 14px;">Code →</a>
@@ -1208,7 +1138,62 @@
 
 </div>
 
-<!-- TAB 2: ABOUT -->
+<!-- TAB 4: SKILLS -->
+<div id="skills" class="tab-content">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="grid-2">
+    <div class="skill-card">
+      <h3 class="mono skill-cat">Cloud &amp; Platform</h3>
+      <div class="skill-chips">
+        <span class="skill-chip">Kubernetes</span>
+        <span class="skill-chip">Helm</span>
+        <span class="skill-chip">Terraform</span>
+        <span class="skill-chip">GitOps</span>
+        <span class="skill-chip">CI/CD</span>
+        <span class="skill-chip">OpenStack</span>
+        <span class="skill-chip">GraphQL</span>
+        <span class="skill-chip">Kafka</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3 class="mono skill-cat">Data &amp; Measurement</h3>
+      <div class="skill-chips">
+        <span class="skill-chip">SQL</span>
+        <span class="skill-chip">Python</span>
+        <span class="skill-chip">Prometheus</span>
+        <span class="skill-chip">Grafana</span>
+        <span class="skill-chip">Metrics design</span>
+        <span class="skill-chip">Demand forecasting</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3 class="mono skill-cat">AI</h3>
+      <div class="skill-chips">
+        <span class="skill-chip">LLM evals</span>
+        <span class="skill-chip">LoRA / QLoRA fine-tuning</span>
+        <span class="skill-chip">RAG</span>
+        <span class="skill-chip">Guardrails</span>
+        <span class="skill-chip">Cost/quality model routing</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3 class="mono skill-cat">Program</h3>
+      <div class="skill-chips">
+        <span class="skill-chip">Operating models</span>
+        <span class="skill-chip">Readiness gates</span>
+        <span class="skill-chip">RAID / RACI</span>
+        <span class="skill-chip">Dependency management</span>
+        <span class="skill-chip">Vendor management</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TAB 5: ABOUT -->
 <div id="about" class="tab-content">
   <h2 class="section-title">About</h2>
 
@@ -1253,6 +1238,7 @@
             <p style="margin-top: 6px; color: var(--text-muted); font-size: 14px;">San Francisco, CA · Green Card holder</p>
           </div>
         </div>
+        <p style="margin-top: 12px;">Open to: platform & infrastructure TPM, AI evals TPM, capacity & forecasting roles — San Francisco Bay Area.</p>
       </div>
 
       <div style="margin-top: 8px;">
