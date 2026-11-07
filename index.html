@@ -842,6 +842,13 @@
     letter-spacing: 0.04em;
   }
 
+
+  .stats-strip { max-width: 1280px; margin: 0 auto; padding: 48px 80px 8px; }
+  .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .stat { border-top: 3px solid #162f42; padding-top: 14px; }
+  .stat-num { font-family: 'Fira Mono', monospace; font-size: clamp(22px, 2.2vw, 32px); font-weight: 700; color: #162f42; }
+  .stat-label { font-size: 15px; color: #3d5668; margin-top: 4px; }
+  @media (max-width: 900px) { .stats-grid { grid-template-columns: 1fr 1fr; } .stats-strip { padding: 36px 24px 4px; } }
 </style>
 </head>
 <body>
@@ -853,7 +860,8 @@
       <p class="hero-name">Aisulu Tustykbayeva <span>| Senior TPM, Cloud & AI Programs</span></p>
       <h1 class="hero-headline">I build the systems cloud and AI teams run on.</h1>
       <p class="hero-tagline">My job is done when the system runs without me. I design to that standard from day one.</p>
-      <p class="hero-proof">PCI DSS 4.0 across 7 data centers &nbsp;&middot;&nbsp; Metrics built from zero (SQL) &nbsp;&middot;&nbsp; AI tutor model live on Hugging Face &nbsp;&middot;&nbsp; San Francisco &nbsp;&middot;&nbsp; US work authorized</p>
+      <p class="hero-proof">On-time delivery 40% &rarr; 85% &nbsp;&middot;&nbsp; $20M billing ARR protected &nbsp;&middot;&nbsp; PCI DSS 4.0 across 7 data centers</p>
+      <p class="hero-proof" style="margin-top: 12px;">Open to platform, infrastructure, and AI evals TPM roles in the Bay Area. <a href="mailto:aisulu.tustykbayeva@gmail.com" style="color: #ffffff; text-decoration: underline;">Email me</a></p>
     </div>
     <div class="right">
       <div class="avatar">
@@ -873,6 +881,19 @@
     </div>
   </div>
 </section>
+
+
+<!-- RESULTS -->
+<div class="stats-strip">
+  <div class="stats-grid">
+    <div class="stat"><div class="stat-num">40% &rarr; 85%</div><div class="stat-label">On-time delivery, company-wide</div></div>
+    <div class="stat"><div class="stat-num">4-6 hrs &rarr; 10-15 min</div><div class="stat-label">Cluster provisioning time, error rate down 10x</div></div>
+    <div class="stat"><div class="stat-num">$20M</div><div class="stat-label">Billing ARR protected in a zero-downtime migration</div></div>
+    <div class="stat"><div class="stat-num">3 weeks early</div><div class="stat-label">PCI DSS 4.0 certification across 7 data centers</div></div>
+    <div class="stat"><div class="stat-num">4 &rarr; 7 sites</div><div class="stat-label">Data center expansion, $8M in deals unblocked</div></div>
+    <div class="stat"><div class="stat-num">15% &rarr; 9%</div><div class="stat-label">Customer churn, $1.8M in revenue leakage cut</div></div>
+  </div>
+</div>
 
 <!-- TABS -->
 <div class="tab-wrapper">
