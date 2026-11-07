@@ -853,11 +853,15 @@
   .pain-title { font-size: clamp(22px, 2vw, 30px); font-weight: 700; color: #162f42; margin-bottom: 6px; }
   .pain-sub { font-size: 16px; color: #3d5668; margin-bottom: 24px; }
   .pain-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-  .pain-card { background: rgba(255,255,255,0.7); border: 1px solid rgba(22,47,66,0.12); border-radius: 10px; padding: 20px 22px; }
+  .pain-card { background: #ffffff; border: 1px solid rgba(22,47,66,0.12); border-radius: 10px; padding: 20px 22px; }
   .pain-card h3 { font-size: 18px; color: #162f42; margin-bottom: 8px; }
   .pain-card p { font-size: 15px; color: #3d5668; }
   .pain-proof { font-family: 'Fira Mono', monospace; font-size: 14px; font-weight: 700; color: #162f42; margin-top: 10px; }
   @media (max-width: 900px) { .pain-grid { grid-template-columns: 1fr; } }
+
+  #problems { background: rgba(255,255,255,0.97); border-radius: 12px; }
+  #problems .pain-sub { color: #2c4252; font-size: 17px; }
+  #problems .pain-card p { color: #2c4252; }
 </style>
 </head>
 <body>
@@ -892,9 +896,21 @@
 </section>
 
 
-<!-- RESULTS -->
-<div class="stats-strip">
-  <div class="pain-title">Problems I solve for leadership</div>
+<!-- TABS -->
+<div class="tab-wrapper">
+  <div class="tab-container">
+    <button class="tab-btn active" onclick="openTab('problems')">Problems I solve</button>
+    <button class="tab-btn" onclick="openTab('value')">What I do</button>
+    <button class="tab-btn" onclick="openTab('programs')">Programs</button>
+    <button class="tab-btn" onclick="openTab('projects')">Projects</button>
+    <button class="tab-btn" onclick="openTab('skills')">Skills</button>
+    <button class="tab-btn" onclick="openTab('about')">About</button>
+  </div>
+</div>
+
+<!-- TAB 1: WHAT I DO -->
+<div id="problems" class="tab-content active">
+  <h2 class="section-title">Problems I solve</h2>
   <p class="pain-sub">You hire a TPM when a program has no owner, no trusted numbers, and a date that cannot move. That is the work I do.</p>
   <div class="pain-grid">
     <div class="pain-card"><h3>You learn about a slip when it is too late</h3><p>No cadence. No metrics you trust. I build both from zero, so risk shows up early, in a form you can act on.</p><div class="pain-proof">On-time delivery: 40% &rarr; 85%, company-wide</div></div>
@@ -906,19 +922,7 @@
   </div>
 </div>
 
-<!-- TABS -->
-<div class="tab-wrapper">
-  <div class="tab-container">
-    <button class="tab-btn active" onclick="openTab('value')">What I do</button>
-    <button class="tab-btn" onclick="openTab('programs')">Programs</button>
-    <button class="tab-btn" onclick="openTab('projects')">Projects</button>
-    <button class="tab-btn" onclick="openTab('skills')">Skills</button>
-    <button class="tab-btn" onclick="openTab('about')">About</button>
-  </div>
-</div>
-
-<!-- TAB 1: WHAT I DO -->
-<div id="value" class="tab-content active">
+<div id="value" class="tab-content">
   <h2 class="section-title">What I do</h2>
   <div class="grid-2">
     <div class="card">
